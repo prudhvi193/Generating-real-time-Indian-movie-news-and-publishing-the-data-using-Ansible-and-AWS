@@ -16,4 +16,4 @@ Developed this project for understanding the integration process of deploying a 
 
 ### V)Lastly we run the playbook with the below command specified, which generates the required DNS information of the provided host over which the application is built
 
-** **Command: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
+** Command: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
