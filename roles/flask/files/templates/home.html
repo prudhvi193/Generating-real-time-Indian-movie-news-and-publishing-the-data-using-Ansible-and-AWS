@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon"  href="{{url_for('static', filename='img/logo.png')}}">
+        <link href="https:/fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="logo-times">
+                <h2>The Times of India News</h2>
+            </a>
+            <ul class="menu-details">
+                <li class="navbar-items">
+                    <a href="/">Home</a>
+                </li>
+                <li class="navbar-itmes">
+                    <a href="/">News</a>
+                </li>
+                <li class="navbar-items">
+                    <a href="/">Blogs</a>
+                </li>
+                <li class="navbar-items">
+                    <a href="/">Contact Information</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="main-details">
+            <div class="banner-details">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-75545547,width-1200,height-900,resizemode-4/75545547.jpg">
+            </div>
+            <div class="main-head">TOP HEADLINES</div>
+            {% for author1,news1,description1,image1,published_date1,article_link1 in zip_contents %}
+            <div class="main-wrapper">
+                <div class="main-item"><a href="{{article_link1}}"><img src="{{image1}}"></a></div>
+                <div class="contents-box">
+                    <div class="content-items"><a href="{{article_link1}}"><h2>{{news1}}</h2></a></div>
+                    <div class="content-items"><a href="{{article_link1}}"><p>{{description1}}</p></a></div>
+                    <div class="content-items"><p style="color:rgb(77, 255, 0);">Author: </p><p>{{author1}}</p></div>
+                    <div class="content-items"><p style="color:rgb(77, 255, 0);">Publish Date: </p><p>{{published_date1}}</p></div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="main-head">TIMES MOVIE NEWS</div>
+            {% for author1,news1,description1,image1,published_date1,article_link1 in complete_zip_contents %}
+            <div class="main-wrapper">
+                <div class="main-item"><a href="{{article_link1}}"><img src="{{image1}}"></a></div>
+                <div class="contents-box">
+                    <div class="content-items"><a href="{{article_link1}}"><h2>{{news1}}</h2></a></div>
+                    <div class="content-items"><a href="{{article_link1}}"><p>{{description1}}</p></a></div>
+                    <div class="content-items"><p style="color:rgb(77, 255, 0);">Author: </p><p>{{author1}}</p></div>
+                    <div class="content-items"><p style="color:rgb(77, 255, 0);">Publish Date: </p><p>{{published_date1}}</p></div>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+        <footer>
+            <div class="footer-head"><h2>Follow all the latest news from the Times of India on our Page</h2></div>
+            <div class="footer-copyright"><h2>Copyright &copy; Latest Times of India News 07 2022</h2></div>
+        </footer>
+    </body>
+</html>

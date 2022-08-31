@@ -1,0 +1,15 @@
+[Unit]
+Description=Flask Application for Times News
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/application.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=mutli-user.target

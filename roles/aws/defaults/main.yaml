@@ -1,0 +1,3 @@
+instance_type: t2.micro
+image1: ami-0d70546e43a941d70
+region: us-west-2
