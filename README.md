@@ -10,9 +10,10 @@ Developed this project for understanding the integration process of deploying a 
 * AWS Roles contain detailed information of instructions needed for providing AWS resources such as VPC, Security Groups, Routing Tables, Internet Gateway and creating an EC2 Linux Instance
 * Flask Roles contain detailed information of the application, the styling details of the application, library dependencies required for the application and the flask service details of the order in which the executables are stored
 
-* Once these details are provisioned we need to configure the AWS Access Key and Secret Keys as environment variables and provision them to the AWS infrastructure instructions
+### III) Once these details are provisioned we need to configure the AWS Access Key and Secret Keys as environment variables and provision them to the AWS infrastructure instructions
 
-* Once these are provisioned we also define the details of the hosts on which the application is executed within the **ansible.cfg configuration file
+### IV) Once these are provisioned we also define the details of the hosts on which the application is executed within the **ansible.cfg configuration file
 
-* Lastly we run the playbook with the below command specified, which generates the required DNS information of the provided host over which the application is built
+### V)Lastly we run the playbook with the below command specified, which generates the required DNS information of the provided host over which the application is built
+
 ** Command: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
