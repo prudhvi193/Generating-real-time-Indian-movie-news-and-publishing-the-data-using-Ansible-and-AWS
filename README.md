@@ -6,7 +6,7 @@ Developed this project for understanding the integration process of deploying a 
 * To run the playbook, ansible and boto need to be installed on local machine. pip install ansible boto
 * Following environment variables need to be configured for AWS credentials.
 
-AWS_ACCESS_KEY_ID=AKIAICLGP********* AWS_SECRET_ACCESS_KEY=rb8yX5I5s980sUA3LT**********
+AWS_ACCESS_KEY_ID=AKIAQGSGI********* AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
 
 ### I) Developed a Flask application for generating real time Indian movie news from a 3rd party NEWS API
 * Designed the application for fetching top news related to the Indian Movie industry and also daily news articles from different news categories
