@@ -6,7 +6,10 @@ Developed this project for understanding the integration process of deploying a 
 * To run the playbook, ansible and boto need to be installed on local machine. pip install ansible boto
 * Following environment variables need to be configured for AWS credentials.
 
-AWS_ACCESS_KEY_ID=AKIAQGSGI********* AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
+AWS_ACCESS_KEY_ID=AKIAQGSGI********* 
+AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
+
+## Steps while developing application
 
 ### I) Developed a Flask application for generating real time Indian movie news from a 3rd party NEWS API
 * Designed the application for fetching top news related to the Indian Movie industry and also daily news articles from different news categories
@@ -20,9 +23,11 @@ AWS_ACCESS_KEY_ID=AKIAQGSGI********* AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1
 
 ### IV) Once these are provisioned we also define the details of the hosts on which the application is executed within the "ansible.cfg" configuration file
 
-### V)Lastly we run the playbook with the below command specified, which generates the required DNS information of the provided host over which the application is built
+## Usage Instructions
 
-* Command: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
+* Without any existing infrastructure, the below command will configure VPC, Subnets, Internet Gateway, Key Pair and launch an EC2 Instance 
+
+### ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
 
 ## Verifying the Web Application
 
