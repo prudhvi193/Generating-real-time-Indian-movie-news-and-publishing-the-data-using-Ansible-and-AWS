@@ -33,11 +33,11 @@ AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
 
 * Once the playbook execution is completed, launched EC2's Public IP will be showing
 
-PLAY RECAP *********************************************************************
+### PLAY RECAP *********************************************************************
 
-34.208.124.86              : ok=7    changed=2    unreachable=0    failed=0
+### 34.208.124.86              : ok=7    changed=2    unreachable=0    failed=0
 
-localhost                  : ok=12   changed=4    unreachable=0    failed=0
+### localhost                  : ok=12   changed=4    unreachable=0    failed=0
 
 * This IP address will be serving a very simple webserver running on flask which will show us the web application deployed.
 
