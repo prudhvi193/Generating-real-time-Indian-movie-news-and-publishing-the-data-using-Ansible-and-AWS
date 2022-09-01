@@ -27,7 +27,7 @@ AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
 
 * Without any existing infrastructure, the below command will configure VPC, Subnets, Internet Gateway, Key Pair and launch an EC2 Instance 
 
-### ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
+** Command: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
 
 ## Verifying the Web Application
 
