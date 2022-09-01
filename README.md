@@ -7,6 +7,7 @@ Developed this project for understanding the integration process of deploying a 
 * Following environment variables need to be configured for AWS credentials.
 
 AWS_ACCESS_KEY_ID=AKIAQGSGI********* 
+
 AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
 
 ## Steps involved in developing and configuring the application
