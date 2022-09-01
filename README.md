@@ -34,4 +34,4 @@ localhost                  : ok=12   changed=4    unreachable=0    failed=0
 
 This IP address will be serving a very simple webserver running on flask which will show us the web application deployed.
 
-![Screenshot](/Users/prudhvirajsheela/Downloads/Screen Shot 2022-08-31 at 5.01.56 PM.png)
+![Alt text](/Users/prudhvirajsheela/Downloads/news.png)
