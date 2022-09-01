@@ -29,7 +29,6 @@ AWS_ACCESS_KEY_ID=AKIAQGSGI********* AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1
 Once the playbook execution is completed, launched EC2's Public IP will be showing
 
 PLAY RECAP *********************************************************************
-
 34.208.124.86              : ok=7    changed=2    unreachable=0    failed=0
 localhost                  : ok=12   changed=4    unreachable=0    failed=0
 
