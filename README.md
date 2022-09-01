@@ -9,7 +9,7 @@ Developed this project for understanding the integration process of deploying a 
 AWS_ACCESS_KEY_ID=AKIAQGSGI********* 
 AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
 
-## Steps while developing application
+## Steps involved in developing and configuring the application
 
 ### I) Developed a Flask application for generating real time Indian movie news from a 3rd party NEWS API
 * Designed the application for fetching top news related to the Indian Movie industry and also daily news articles from different news categories
