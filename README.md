@@ -2,7 +2,7 @@
 
 Developed this project for understanding the integration process of deploying a flask application using Ansible with AWS as the cloud platform configured within the playbook.
 
-### Prerequsite
+## Prerequsite
 * To run the playbook, ansible and boto need to be installed on local machine. pip install ansible boto
 * Following environment variables need to be configured for AWS credentials.
 
@@ -23,3 +23,15 @@ AWS_ACCESS_KEY_ID=AKIAQGSGI********* AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1
 ### V)Lastly we run the playbook with the below command specified, which generates the required DNS information of the provided host over which the application is built
 
 * Command: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook ec2-provision.yml -u ubuntu
+
+## Verifying the Web Application
+
+Once the playbook execution is completed, launched EC2's Public IP will be showing
+
+PLAY RECAP *********************************************************************
+34.208.124.86              : ok=7    changed=2    unreachable=0    failed=0
+localhost                  : ok=12   changed=4    unreachable=0    failed=0
+
+This IP address will be serving a very simple webserver running on flask which will show us the web application deployed.
+
+![Screenshot](/Users/prudhvirajsheela/Downloads/Screen Shot 2022-08-31 at 5.01.56 PM.png)
