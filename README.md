@@ -31,7 +31,7 @@ AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
 
 ## Verifying the Web Application
 
-Once the playbook execution is completed, launched EC2's Public IP will be showing
+* Once the playbook execution is completed, launched EC2's Public IP will be showing
 
 PLAY RECAP *********************************************************************
 
@@ -39,7 +39,7 @@ PLAY RECAP *********************************************************************
 
 localhost                  : ok=12   changed=4    unreachable=0    failed=0
 
-This IP address will be serving a very simple webserver running on flask which will show us the web application deployed.
+* This IP address will be serving a very simple webserver running on flask which will show us the web application deployed.
 
 <img width="1402" alt="news" src="https://user-images.githubusercontent.com/29569453/187806368-160054ba-e542-4b7d-963d-1d609e4108c9.png">
 
