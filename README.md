@@ -20,10 +20,6 @@ AWS_SECRET_ACCESS_KEY=ScBxDindD4ddVEMLSJi+1**********
 * AWS Roles contain detailed information of instructions needed for providing AWS resources such as VPC, Security Groups, Routing Tables, Internet Gateway and creating an EC2 Linux Instance
 * Flask Roles contain detailed information of the application, the styling details of the application, library dependencies required for the application and the flask service details of the order in which the executables are stored
 
-### III) Once these details are provisioned we need to configure the AWS Access Key and Secret Keys as environment variables and provision them to the AWS infrastructure instructions
-
-### IV) Once these are provisioned we also define the details of the hosts on which the application is executed within the "ansible.cfg" configuration file
-
 ## Usage Instructions
 
 * Without any existing infrastructure, the below command will configure VPC, Subnets, Internet Gateway, Key Pair and launch an EC2 Instance 
